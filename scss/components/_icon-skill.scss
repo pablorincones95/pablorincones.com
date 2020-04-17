@@ -1,0 +1,21 @@
+.icon-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px 15px 15px;
+  @include mq(l) {
+    padding: 0px 30px 30px 30px;
+  }
+  i {
+    width: 50px;
+    padding-bottom: 20px;
+  }
+  svg {
+    color: var(--alternateColor);
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}

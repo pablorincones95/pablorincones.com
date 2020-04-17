@@ -1,0 +1,15 @@
+.content {
+  &__text {
+    margin-bottom: 50px;
+    @include mq(l) {
+      margin-bottom: 0;
+    }
+  }
+  &__img {
+    box-shadow: var(--shadowTwo);
+    max-width: 600px;
+    &.--radius {
+      border-radius: 50%;
+    }
+  }
+}

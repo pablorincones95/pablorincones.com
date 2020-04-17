@@ -1,0 +1,108 @@
+.header {
+  background-color: var(--mainColor);
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    width: 100%;
+    margin-top: 20px;
+    @include mq(m) {
+      padding: 2.5rem 1.5rem;
+      margin-top: 0;
+    }
+    &.--scroll {
+      background-color: var(--mainColor);
+      width: 100%;
+      margin-top: 0;
+      border-radius: 0 0 1rem 1rem;
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18);
+      @include mq(m) {
+        padding: 1rem 2.5rem;
+      }
+    }
+    &__brand {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      a {
+        font-size: 1.5rem;
+        color: var(--white);
+        @include mq(l) {
+          font-size: 2rem;
+        }
+      }
+      img {
+        width: 35px;
+        margin-right: 10px;
+        @include mq(m) {
+          margin-right: 25px;
+        }
+      }
+      @include mq(m) {
+        margin-left: 0
+      }
+      @include mq(l) {
+        margin-left: 10px;
+      }
+    }
+    &__btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 35px;
+      }
+      @include mq(l) {
+        display: none;
+      }
+    }
+    &__menu {
+      margin-top: -100vw;
+      width: 100%;
+      text-align: center;
+      transition: all .6s ease;
+      z-index: -111;
+      align-self: center;
+      &.is-active {
+        margin-top: 0;
+      }
+      @include mq(l) {
+        flex: 2;
+        width: auto;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+      }
+      li {
+        list-style: none;
+        padding: 10px 0;
+        @include mq(l) {
+          padding-left: 1rem;
+        }
+      }
+      a {
+        padding: .5rem 1.5rem;
+        border-radius: 1rem;
+        color: var(--white);
+        &.active {
+          color: var(--white);
+          background-color: var(--secondColor);
+        }
+        &:hover {
+          background-color: var(--secondColor);
+          @include mq(l) {
+            background-color: var(--secondColor);
+          }
+        }
+        @include mq(m) {
+          margin-left: .5rem;
+        }
+      }
+    }
+  }
+}

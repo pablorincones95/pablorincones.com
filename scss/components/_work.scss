@@ -1,0 +1,23 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  height: auto;
+  &__img {
+    width: 9.375rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--alternateTwoColor);
+  }
+  p {
+    text-align: center;
+  }
+  svg {
+    font-size: 4rem;
+    margin: .5rem 5rem;
+  }
+}

@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+  font-family: var(--mainFont), var(--alternateFont);
+  font-size: var(--fontSize);
+  line-height: var(--lineHeight);
+  color: var(--text-color);
+  background-color: var(--white);
+  body {
+    overflow-x: hidden;
+    ul {
+      list-style: none;
+    }
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--secondColor);
+      transition: all .3s ease-out;
+      &:hover {
+        color: var(--white);
+      }
+    }
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+     ::selection {
+      background-color: var(--mainColor);
+      color: var(--secondColor);
+    }
+  }
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}

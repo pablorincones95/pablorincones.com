@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/** base **/
+
+@import 'base/variables';
+@import 'base/base';
+
+/** Utils **/
+
+@import 'utils/mixins';
+@import 'utils/helpers';
+
+/** layout **/
+
+@import 'layout/grid';
+@import 'layout/content';
+
+/** Components **/
+
+@import 'components/header';
+@import 'components/particles';
+@import 'components/content';
+@import 'components/btn';
+@import 'components/services';
+@import 'components/card';
+@import 'components/work';
+@import 'components/icon-skill';
+@import 'components/cta';
+@import 'components/footer';
+
+/** Pages **/

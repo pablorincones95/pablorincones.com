@@ -1,0 +1,59 @@
+.u-responsiveGrid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.u-responsiveFlexbox {
+  display: flex;
+  flex-wrap: wrap;
+  &>* {
+    flex: 1 1 200px;
+  }
+}
+
+.u-message {
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  @include mq(m) {
+    font-size: 1.5rem;
+  }
+}
+
+.u-none {
+  display: none;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  top: 80%;
+  right: 2%;
+  z-index: 9999;
+  img {
+    width: 4rem;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.margin {
+  margin: 4rem 0;
+}
+
+.icon {
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.loading-icon {
+  width: 150px;
+}

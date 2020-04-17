@@ -1,0 +1,37 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__img {
+    margin-bottom: 1.875rem;
+    height: 250px;
+    border-radius: 5%;
+    @include mq(s) {
+      height: 350px;
+    }
+    @include mq(m) {
+      height: 450px;
+    }
+    @include mq(l) {
+      height: 300px;
+    }
+    @include mq(xxl) {
+      height: 450px;
+    }
+    max-width: 600px;
+    max-height: 600px;
+  }
+  &__title {
+    color: var(--alternateTwoColor);
+    margin-bottom: 0.625rem;
+    font-size: 1.5rem;
+  }
+  p {
+    margin-bottom: 1.25rem;
+  }
+  .btn {
+    margin-bottom: 1.875rem;
+  }
+}
